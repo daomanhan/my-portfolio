@@ -1,10 +1,220 @@
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Chào bạn! Mình là An, một học sinh đam mê lĩnh vực Công nghệ Thông tin và đang trên hành trình phát triển kỹ năng về lập trình, làm web và khoa học dữ liệu. 
-    Mình yêu thích việc tạo ra những sản phẩm có ý nghĩa và đang không ngừng học hỏi để trở thành một lập trình viên giỏi trong tương lai.
-  </p>
-  <p>
-    Hiện tại mình đang học HTML, CSS và JavaScript, đồng thời thực hiện các dự án nhỏ để luyện tập. Mình cũng rất hứng thú với việc khám phá AI, game development và xây dựng các ứng dụng hữu ích cho cuộc sống.
-  </p>
-</section>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An - Portfolio | MindX Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>An's Portfolio</h1>
+                <span class="subtitle">MindX Student</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#projects" class="nav-link">Dự án</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Xin chào! Mình là <span class="highlight">An</span></h1>
+            <p class="hero-subtitle">Học sinh MindX đam mê Công nghệ Thông tin</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Tìm hiểu thêm</a>
+                <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Giới thiệu về mình</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Chào bạn! Mình là An, một học sinh đam mê lĩnh vực Công nghệ Thông tin và đang trên hành trình phát triển kỹ năng về lập trình, làm web và khoa học dữ liệu. 
+                        Mình yêu thích việc tạo ra những sản phẩm có ý nghĩa và đang không ngừng học hỏi để trở thành một lập trình viên giỏi trong tương lai.
+                    </p>
+                    <p>
+                        Hiện tại mình đang học HTML, CSS và JavaScript tại MindX Technology School, đồng thời thực hiện các dự án nhỏ để luyện tập. Mình cũng rất hứng thú với việc khám phá AI, game development và xây dựng các ứng dụng hữu ích cho cuộc sống.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Kỹ năng của mình</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Cấu trúc và ngữ nghĩa web</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Styling và responsive design</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Lập trình web tương tác</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="60"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI & Data Science</h3>
+                    <p>Học máy và phân tích dữ liệu</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Dự án của mình</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Trang web cá nhân được xây dựng bằng HTML, CSS và JavaScript để showcase kỹ năng và dự án.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator App</h3>
+                        <p>Ứng dụng máy tính đơn giản với giao diện thân thiện, hỗ trợ các phép tính cơ bản.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mini Game</h3>
+                        <p>Game đơn giản được phát triển để thực hành logic programming và tương tác người dùng.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5 Canvas</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Liên hệ với mình</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>an.student@mindx.edu.vn</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/an-mindx</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>Trường học</h3>
+                            <p>MindX Technology School</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Tên của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 An's Portfolio. Được tạo trong khóa học tại MindX Technology School.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://mindx.edu.vn" target="_blank" class="footer-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        MindX Technology School
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
